@@ -1,0 +1,39 @@
+footer .container .copyRight {
+    color: #1AE0EC;
+    font: normal normal 300 20px/29px Heebo;
+    display: flex;
+    width: 100vw;
+    line-height: 2.2;
+    margin: 0 auto;
+    background-color: #000000;
+}
+
+footer .container .copyRight .right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1250px;
+    margin-left: 680px;
+    text-align: left;
+    background-color: #000000;
+    position: absolute;
+    z-index: 10;
+}
+
+footer .container .copyRight .left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1800px;
+    margin-left: -900px;
+    text-align: left;
+    background-color: #000000;
+    position: absolute;
+    z-index: 9;
+}
+
+@media (max-width: 768px) {}
+
+@media screen and (max-width:576px) {}

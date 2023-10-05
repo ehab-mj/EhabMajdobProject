@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap" rel="stylesheet">
+    <title>Here&Now</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(to bottom, #281EFF, #2DFF8C);
+        }
+
+        h1 {
+            width: 755px;
+            height: 204px;
+            margin-left: 172px;
+            margin-right: 172px;
+            /* UI Properties */
+
+            text-align: center;
+            font: normal normal normal 160px/231px Satisfy;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            text-shadow: 0px 0px 36px #00000087;
+            opacity: 1;
+        }
+
+        p {
+            text-align: center;
+            font: normal normal normal 32px/38px Varela Round;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+        }
+
+        .smalltext {
+            margin-top: 18px;
+            text-align: center;
+            font: normal normal normal 16px/20px Varela Round;
+            letter-spacing: 0px;
+            color: #F9F9F9;
+            opacity: 1;
+        }
+
+        /*
+        label {
+            display: flex;
+            justify-content: end;
+
+            color: rgb(255, 255, 255);
+            text-align: right;
+            font: normal normal normal 16px/20px Varela Round;
+            margin-top: 25px;
+        }
+
+        input[type=submit] {
+            margin: 15px;
+            padding: 15px 40px;
+            background-color: blueviolet;
+            color: aliceblue;
+            font-size: 1.5rem;
+        }
+*/
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container form {
+            height: 73px;
+        }
+
+        .container form .form-row {
+            direction: rtl;
+            display: flex;
+            margin-top: 3.7vh;
+        }
+
+        .container form .form-row .formlabel {
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            margin-right: 2vw;
+        }
+
+        .container form .form-row .formlabel input {
+            background: rgba(246, 246, 246, 0.1411764706) 0% 0% no-repeat padding-box;
+            width: 21.77vw;
+            height: 4.62vh;
+            border: 2px solid #FFFFFF;
+            opacity: 1;
+        }
+
+        .container form .form-row .formlabel input:hover {
+            background: rgba(246, 246, 246, 0.1411764706) 0% 0% no-repeat padding-box;
+            width: 21.77vw;
+            height: 4.62vh;
+            border: 2px solid #FFFFFF;
+            opacity: 1;
+            box-shadow: 0 4px #281EFF;
+        }
+
+        .container form .form-row .formlabel label {
+            text-align: right;
+            font: normal normal normal 16px/20px Varela Round;
+            letter-spacing: 0px;
+            color: #F9F9F9;
+            opacity: 1;
+        }
+
+        .container form .form-row .formlabel .btn {
+            display: block;
+            width: 11vw;
+            height: 4.62vh;
+            background-color: #FFFFFF;
+            opacity: 1;
+            font: normal normal normal 16px/2.5 Varela Round;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+            cursor: pointer;
+        }
+
+        .container form .form-row .formlabel .btn:hover {
+            display: block;
+            width: 11vw;
+            height: 4.62vh;
+            background-color: #FFFFFF;
+            opacity: 1;
+            font: normal normal normal 16px/2.5 Varela Round;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width:500px) {
+            h1 {
+                width: 100vw;
+                height: 120vw;
+                /* UI Properties */
+                font: normal normal normal 60px/131px Satisfy;
+            }
+
+            p {
+                width: 100vw;
+                position: absolute;
+                margin-top: -70vw;
+                text-align: center;
+                font: normal normal normal 22px/28px Varela Round;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+                opacity: 1;
+            }
+
+            .smalltext {
+                width: 80vw;
+                margin-top: -40vw;
+                text-align: center;
+                font: normal normal normal 16px/20px Varela Round;
+                letter-spacing: 0px;
+                color: #F9F9F9;
+                opacity: 1;
+            }
+
+            .container form .form-row {
+                display: block;
+                margin-top: -17.7vh;
+            }
+
+            .container form .form-row .formlabel input {
+                background: rgba(246, 246, 246, 0.1411764706) 0% 0% no-repeat padding-box;
+                width: 80.77vw;
+                height: 4.62vh;
+                margin-bottom: 2rem;
+                border: 2px solid #FFFFFF;
+                opacity: 1;
+            }
+
+            .container form .form-row .formlabel input:hover {
+                background: rgba(246, 246, 246, 0.1411764706) 0% 0% no-repeat padding-box;
+                width: 80.77vw;
+                height: 4.62vh;
+                margin-bottom: 2rem;
+                border: 2px solid #FFFFFF;
+                opacity: 1;
+            }
+
+            .container form .form-row .formlabel .btn {
+                display: block;
+                width: 81vw;
+                height: 4.62vh;
+                background-color: #FFFFFF;
+                opacity: 1;
+                font: normal normal normal 16px/2.5 Varela Round;
+                letter-spacing: 0px;
+                color: #000000;
+                opacity: 1;
+                cursor: pointer;
+            }
+
+            .container form .form-row .formlabel .btn:hover {
+                display: block;
+                width: 81vw;
+                height: 4.62vh;
+                background-color: #FFFFFF;
+                opacity: 1;
+                font: normal normal normal 16px/2.5 Varela Round;
+                letter-spacing: 0px;
+                color: #000000;
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Here & Now</h1>
+        <p>רצינו להזמין אתכם להנות משלל מתנות</p>
+        <p class="smalltext">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש
+            בליא, מנסוטו צמלח
+            לביקו
+            ננבי, צמוקו בלוקריה.</p>
+
+        <form action="">
+            <div class="form-row">
+                <div class="formlabel">
+                    <label for="FirstName">שם</label>
+                    <input type="text" id="FirstName" required><br>
+                </div>
+                <div class="formlabel">
+                    <label for="email">דואר אלקרוני</label>
+                    <input type="text" id="email" required><br>
+                </div>
+                <div class="formlabel">
+                    <label for="submit"></label>
+                    <input class="btn" type="submit" value="עדכנו אותי">
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

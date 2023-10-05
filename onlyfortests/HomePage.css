@@ -1,0 +1,963 @@
+/*  NAV  
+header {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 900;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li a {
+    font-family: Heebo;
+    display: block;
+    width: 100px;
+    text-decoration: none;
+    font-size: 14pt;
+    border: 1px solid #1AE0EC;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    font-family: Heebo;
+    display: block;
+    width: 100px;
+    text-decoration: none;
+    font-size: 14pt;
+    border-radius: 10px;
+    text-align: center;
+}
+
+nav ul li ul li {
+    clear: both;
+}
+
+nav ul li ul {
+    display: none;
+}
+*/
+
+/*
+.card-fluid {
+    background-color: rgb(255, 219, 111);
+    width: 100vw;
+    height: 600px;
+}
+
+/* BG AND JOB FOLDER 
+.image-container {
+    position: relative;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #3A3A3A;
+}
+
+/*  ICONS 
+.sectionimages {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+
+.divimages {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 100vw;
+}
+*/
+
+/* ABOUT 
+
+.container-fluid {
+    background-color: #fff;
+    width: 100vw;
+    height: 700px;
+}
+
+.container-fluid h2 {
+    margin: auto;
+    font-size: 35px;
+    width: 132px;
+    height: 70px;
+    font: normal normal 900 35px/52px Heebo;
+    color: #3A3A3A
+}
+
+.container-fluid p {
+    font-size: 20px;
+    direction: rtl;
+    width: 650px;
+    height: 232px;
+    text-align: center;
+    color: #3A3A3A;
+    margin: auto;
+}
+
+.container-fluid button {
+    width: 260px;
+    height: 40px;
+    background-color: #1AE0EC;
+    color: #3A3A3A;
+    font: normal normal bold 20px/30px Heebo;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 20vh;
+    border: 0;
+}
+
+.text-center {
+    font-size: 16pt;
+    font-family: Heebo;
+    width: 100vw;
+    height: 100px;
+}
+*/
+
+/* CARDS 
+.cardsgrid {
+    width: 100%;
+    height: 1558px;
+    top: 315px;
+    margin-top: 50px;
+    background: #F6F6F6;
+    opacity: 1;
+}
+
+.cardsgrid h2 {
+    width: 234px;
+    height: 52px;
+    font-size: 36px;
+    font: normal normal 900 36px/53px Heebo;
+    color: #3A3A3A;
+    opacity: 1;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.cardsgrid p {
+    width: 576px;
+    height: 58px;
+    margin: auto;
+    font: normal normal normal 20px Heebo;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1
+}
+
+.cardsgrid .cards {
+    margin-top: 30px;
+    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 405px);
+    grid-template-rows: repeat(2, 500px);
+}
+
+.cards {
+    background-color: #F6F6F6;
+    width: 1315px;
+    height: 1200px;
+    margin: auto auto auto auto;
+}
+
+.cardsgrid .box {
+    height: 500px;
+    margin: 1%;
+    background-color: #fff;
+    box-shadow: 3px 3px 15px #00000029;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+
+.cardsgrid .box1 #f {
+    width: 405px;
+    height: 500px;
+    margin-top: 0;
+    position: absolute;
+    z-index: 200;
+    overflow: hidden;
+}
+
+.cardsgrid .box1 .card-body h1 {
+    width: 10vw;
+    font-size: 2rem;
+    margin-top: -22vh;
+    margin-left: 65px;
+    text-align: center;
+
+    z-index: 1000;
+    background-color: red;
+}
+
+/* CARDS IMAGES HERE 
+.cards .box1 img {
+    background-image: url(1.jpg.png);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cards .box2 img {
+    background-image: url(2.png);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cards .box3 img {
+    background-image: url(3.png);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cards .box4 img {
+    background-image: url(4.png);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cards .box5 img {
+    background-image: url(5.png);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cards .box6 img {
+    background-image: url(6.png);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+*/
+/* CARDS SECTION HERE */
+
+
+/* CONTACT */
+/*
+footer {
+    background-color: #3A3A3A;
+    bottom: 0;
+    width: 100%;
+    direction: rtl;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    background-color: #3A3A3A;
+    margin-right: 305px;
+}
+
+footer .container .contact {
+    width: 100%;
+    height: 88vh;
+    background: #3A3A3A 0% 0% no-repeat padding-box;
+    color: wheat;
+    display: flex;
+}
+
+footer .container .contact .imgbox {
+    width: 70vw;
+    position: absolute;
+    margin-left: 1381px;
+}
+
+footer .container .contact .smbox {
+    display: none;
+    width: 200px;
+    height: 100px;
+    margin-right: -50px;
+}
+
+footer .container .contact form {
+    width: 30vw;
+    margin-top: 161px;
+    background: #3A3A3A;
+}
+
+footer .container .contact form .form-type {
+    margin-bottom: 17px;
+    text-align: right;
+}
+
+footer .container .contact form .form-type input {
+    width: 550px;
+    height: 50px;
+    text-align: right;
+    font: normal normal bold 18px/24px Heebo;
+    box-shadow: 0 7px #1AE0EC;
+}
+
+footer .container .contact form .form-type input:hover {
+    width: 550px;
+    height: 50px;
+    text-align: right;
+    font: normal normal bold 18px/24px Heebo;
+    box-shadow: 0 16px #f4143c;
+    /* f4143c / 251473 
+
+
+footer .container .contact form .form-type input[id=massage] {
+    width: 550px;
+    height: 100px;
+    background: #ffffff
+}
+
+footer .container .contact form .form-type label {
+    text-align: right;
+    font: normal normal bold 16px/24px Heebo;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+}
+
+/*footer .container
+.contact form h1 {
+    text-align: right;
+    font: normal normal 900 36px/53px Heebo;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.contact form p {
+    text-align: right;
+    font: normal normal normal 20px/29px Heebo;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-bottom: 47px;
+}
+
+footer .container .contact form .btn {
+    display: block;
+    width: 10.375rem;
+    height: 3.125rem;
+    background: #1AE0EC;
+    border-radius: 25px;
+    font: normal normal bold 22px/30px Heebo;
+    color: rgb(44, 44, 44);
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.9;
+    opacity: 1;
+}
+
+footer .container .contact form .btn:hover {
+    display: block;
+    width: 10.375rem;
+    height: 3.125rem;
+    background: #251473;
+    border-radius: 25px;
+    font: normal normal bold 22px/30px Heebo;
+    color: #f4143c;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.9;
+    opacity: 1;
+}
+
+/*Footer Icons MEDIA
+
+footer .container .media {
+    height: 200px;
+    width: 100vw;
+    margin-right: -310px;
+    background: #0cf7ff;
+    opacity: 1;
+}
+
+footer .container .media .icons-box {
+
+    width: 60vw;
+    height: 200px;
+    display: inline-grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    background-color: #0cf7ff;
+    margin-right: 500px;
+}
+
+footer .container .media .icons-box .box-item img {
+    margin-bottom: 2vh;
+    margin-right: 4.5vw;
+}
+
+footer .container .media .icons-box .box-item h5 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: 0.5vw;
+    font: normal normal normal 14px/16px Heebo;
+    letter-spacing: 0px;
+    color: #050505;
+    opacity: 1;
+}
+
+footer .container .copyRight {
+    color: #1AE0EC;
+    font: normal normal 300 20px/29px Heebo;
+    display: flex;
+    width: 100vw;
+    line-height: 2.2;
+    margin: 0 auto;
+    background-color: #000000;
+}
+
+footer .container .copyRight .right {
+    float: right;
+    width: 50%;
+    text-align: right;
+    margin-right: -315px;
+    background-color: #000000;
+}
+
+footer .container .copyRight .left {
+    float: left;
+    width: -50%;
+    text-align: left;
+    margin-right: 900px;
+    background-color: #000000;
+}
+*/
+
+/* MEDIA MEDIA  MEDIA  MEDIA 
+@media (max-width: 3024px) {
+    .image-text h2 {
+        font-size: 76px;
+        font-weight: bold;
+    }
+
+    .image-text p {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+}
+*/
+
+/*
+@media (min-width: 1050px) and (max-width:1500px) {
+    .cardsgrid .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        justify-content: center;
+        gap: 100px;
+        width: 1000px;
+        height: 500px;
+        margin: auto;
+    }
+
+    .cardsgrid {
+        background-color: #F6F6F6;
+        height: 2000px;
+    }
+
+    .cardsgrid h2 {
+        width: 234px;
+        height: 52px;
+        font-size: 36px;
+        font: normal normal 900 36px/53px Heebo;
+        color: #3A3A3A;
+        opacity: 1;
+        text-align: center;
+        margin-top: 30px;
+        margin: auto;
+    }
+
+    .cardsgrid p {
+        height: 100px;
+        margin: auto;
+        font: normal normal normal 20px Heebo;
+        text-align: center;
+        letter-spacing: 0px;
+        color: #3A3A3A;
+        opacity: 1
+    }
+}
+*/
+
+/* 
+@media (min-width: 768px) and (max-width: 1050px) {
+
+    /*   .image-container {
+        position: relative;
+        height: 50vh;
+        margin-bottom: -150px;
+    }
+
+    .image-container img {
+        position: relative;
+        height: 40vh;
+        width: 50vw;
+    }
+
+    .image-text h2 {
+        font-size: 66px;
+        font-weight: bold;
+    }
+
+    .image-text p {
+        font-size: 14px;
+        font-weight: 600;
+    }
+*/
+
+/*
+.cardsgrid .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    grid-template-rows: repeat(6, 437px);
+    justify-content: center;
+    gap: 100px;
+    width: 376px;
+    height: 100px;
+    margin: auto;
+}
+
+.cardsgrid {
+    background-color: #F6F6F6;
+    height: 3500px;
+}
+*/
+
+@media (max-width: 768px) {
+
+    /*.image-container {
+        position: relative;
+        height: 50vh;
+        margin-bottom: -150px;
+    }
+
+    .image-container img {
+        position: relative;
+        height: 40vh;
+        width: 50vw;
+    }
+
+    .image-text h2 {
+        font-size: 36pt;
+        font-weight: bold;
+    }
+
+    .image-text p {
+        width: 500px;
+        font-size: 17px;
+        top: 15%;
+        font-weight: 600;
+    }
+*/
+
+    /*
+    .cardsgrid .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(6, 437px);
+        justify-content: center;
+        gap: 100px;
+        width: 376px;
+        height: 100px;
+        margin: auto;
+    }
+
+    .cardsgrid {
+        background-color: #F6F6F6;
+        height: 3500px;
+    }
+*/
+
+    /* .container-fluid h2 {
+        margin: auto;
+        font-size: 35px;
+        width: 132px;
+        height: 52px;
+        color: #3A3A3A
+    }
+
+    .container-fluid p {
+        font-size: 20px;
+        direction: rtl;
+        width: 423px;
+        height: 186px;
+        text-align: center;
+        color: #3A3A3A;
+        margin: auto;
+    }
+
+    .container-fluid button {
+        width: 260px;
+        height: 40px;
+        background-color: #1AE0EC;
+        color: #3A3A3A;
+        font: normal normal bold 20px/30px Heebo;
+        border-radius: 25px;
+        text-align: center;
+        margin-top: 28vh;
+        border: 0;
+    }
+
+    .container-fluid {
+        background-color: #fff;
+        width: 100vw;
+        height: 700px;
+    }
+*/
+    /* FOOTER 
+
+    footer .container .contact form {
+        width: 30vw;
+        margin-top: 231px;
+        background: #3A3A3A;
+        margin-right: -45vw;
+    }
+
+    footer .container .contact {
+        width: 100%;
+        height: 76vh;
+        background: #3A3A3A 0% 0% no-repeat padding-box;
+        color: wheat;
+        display: flex;
+    }
+
+    .contact form h1 {
+        width: 90vw;
+        margin-right: 5.5vw;
+        text-align: right;
+        font: normal normal 900 36px/53px Heebo;
+        letter-spacing: 0px;
+        color: #ffffff;
+        opacity: 1;
+    }
+
+    .contact form p {
+        margin-right: 5.5vw;
+        text-align: right;
+        font: normal normal normal 16px/29px Heebo;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        margin-bottom: 47px;
+        width: 90vw;
+    }
+
+    footer .container .contact form .form-type input {
+        width: 350px;
+        height: 50px;
+        margin-right: 5.5vw;
+        text-align: right;
+        font: normal normal bold 18px/24px Heebo;
+    }
+
+    footer .container .contact form .form-type input:hover {
+        width: 350px;
+        height: 50px;
+        text-align: right;
+        font: normal normal bold 18px/24px Heebo;
+        box-shadow: 0 16px #f4143c;
+        /* f4143c / 251473 
+}
+
+footer .container .contact form .form-type input[id=massage] {
+    width: 350px;
+    height: 100px;
+    background: #ffffff
+}
+
+footer .container .contact form .form-type label {
+    text-align: right;
+    margin-right: 5.5vw;
+    font: normal normal bold 16px/24px Heebo;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+}
+
+footer .container .contact form .btn {
+    display: block;
+    margin-right: 5.5vw;
+    width: 10.375rem;
+    height: 3.125rem;
+    background: #1AE0EC;
+    border-radius: 25px;
+    font: normal normal bold 22px/30px Heebo;
+    color: rgb(44, 44, 44);
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.9;
+    opacity: 1;
+}
+
+footer .container .contact .smbox {
+    display: block;
+    width: 200px;
+    height: 100px;
+    margin-right: 150px;
+}
+*/
+
+    @media screen and (max-width:576px) {
+
+        /*  .image-container {
+        position: relative;
+        height: 50vh;
+        margin-bottom: -150px;
+    }
+
+    .image-container img {
+        position: relative;
+        height: 40vh;
+        width: 50vw;
+    }
+
+    .image-text h2 {
+        font-size: 2.7rem;
+        top: 55%;
+        font-weight: bold;
+    }
+
+    .image-text p {
+        width: 400px;
+        font-size: 1.2rem;
+        top: 15%;
+        font-weight: 600;
+    }
+*/
+
+        /*    .container-fluid {
+        width: 100vw;
+        height: 750px;
+    }
+
+    .container-fluid h2 {
+        margin: auto;
+        font-size: 35px;
+        width: 132px;
+        height: 52px;
+        color: #3A3A3A
+    }
+
+    .container-fluid p {
+        font-size: 20px;
+        direction: rtl;
+        width: 423px;
+        height: 186px;
+        text-align: center;
+        color: #3A3A3A;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .container-fluid button {
+        width: 360px;
+        height: 50px;
+        font: normal normal bold 25px/30px Heebo;
+        margin-top: 350px;
+        box-shadow: none;
+    }
+*/
+        /* CARDS */
+
+
+        /*   .cardsgrid h2 {
+        width: 234px;
+        height: 52px;
+        font-size: 36px;
+        font: normal normal 900 36px/53px Heebo;
+        color: #3A3A3A;
+        opacity: 1;
+        text-align: center;
+        margin-top: 30px;
+        margin: auto;
+    }
+
+    .cardsgrid p {
+        width: 376px;
+        height: 100px;
+        margin: auto;
+        font: normal normal normal 20px Heebo;
+        text-align: center;
+        letter-spacing: 0px;
+        color: #3A3A3A;
+        opacity: 1;
+    }
+*/
+        /* FOOTER 
+
+        footer .container .contact form {
+            width: 30vw;
+            margin-top: 231px;
+            background: #3A3A3A;
+            margin-right: -65vw;
+        }
+
+        footer .container .contact {
+            width: 100%;
+            height: 76vh;
+            background: #3A3A3A 0% 0% no-repeat padding-box;
+            color: wheat;
+            display: flex;
+        }
+
+        .contact form h1 {
+            width: 90vw;
+            margin-right: 5.5vw;
+            text-align: right;
+            font: normal normal 900 36px/53px Heebo;
+            letter-spacing: 0px;
+            color: #ffffff;
+            opacity: 1;
+        }
+
+        .contact form p {
+            margin-right: 5.5vw;
+            text-align: right;
+            font: normal normal normal 16px/29px Heebo;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+            margin-bottom: 47px;
+            width: 90vw;
+        }
+
+        footer .container .contact form .form-type input {
+            width: 350px;
+            height: 50px;
+            margin-right: 5.5vw;
+            text-align: right;
+            font: normal normal bold 18px/24px Heebo;
+        }
+
+        footer .container .contact form .form-type input:hover {
+            width: 350px;
+            height: 50px;
+            text-align: right;
+            font: normal normal bold 18px/24px Heebo;
+            box-shadow: 0 16px #f4143c;
+            /* f4143c / 251473 */
+    }
+
+    footer .container .contact form .form-type input[id=massage] {
+        width: 350px;
+        height: 100px;
+        background: #ffffff
+    }
+
+    footer .container .contact form .form-type label {
+        text-align: right;
+        margin-right: 5.5vw;
+        font: normal normal bold 16px/24px Heebo;
+        letter-spacing: 0px;
+        color: #ffffff;
+        opacity: 1;
+    }
+
+    footer .container .contact form .btn {
+        display: block;
+        margin-right: 5.5vw;
+        width: 10.375rem;
+        height: 3.125rem;
+        background: #1AE0EC;
+        border-radius: 25px;
+        font: normal normal bold 22px/30px Heebo;
+        color: rgb(44, 44, 44);
+        letter-spacing: 0.3px;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.9;
+        opacity: 1;
+    }
+
+    footer .container .contact .smbox {
+        display: block;
+        width: 200px;
+        height: 100px;
+        margin-right: -20px;
+    }
+
+    footer .container .media .icons-box {
+
+        width: -20vw;
+        height: 200px;
+        display: inline-grid;
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        background-color: #2f3131;
+        margin-right: 500px;
+    }
+
+    footer .container .media .icons-box .box-item img {
+        margin-bottom: 2vh;
+        margin-right: 85.5vw;
+    }
+
+    footer .container .media .icons-box .box-item h5 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-right: 0.5vw;
+        font: normal normal normal 14px/16px Heebo;
+        letter-spacing: 0px;
+        color: #050505;
+        opacity: 1;
+    }
+}
+
+
+/* MEDIA AND MEDIA AND MEDIA AND */
+
+/*
+@media screen and (max-width:900px) {
+
+    .cardsgrid .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(6, 437px);
+        justify-content: center;
+        gap: 100px;
+        width: 376px;
+        height: 100px;
+        margin: auto;
+    }
+
+    .cardsgrid {
+        background-color: #F6F6F6;
+        height: 3500px;
+    }
+}
+}
+*/
