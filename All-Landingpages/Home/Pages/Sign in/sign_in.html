@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            height: 100;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+        }
+
+        .container {
+            width: 100vw;
+        }
+
+        .btn {
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 490px;
+        }
+
+        .box {
+            background-color: #1A1A1AD4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            direction: rtl;
+            width: 35em;
+            height: 40em;
+            top: 20vh;
+            right: 20vw;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            font: normal normal 900 36px/53px Heebo;
+        }
+
+        p {
+            text-align: center;
+            font: normal normal 400 20px/29px Heebo;
+            margin: 20px 80px;
+            color: #fff;
+        }
+
+        label {
+            display: block;
+            color: #fff;
+            margin-top: 10px;
+            font: normal normal 700 16px/24px Heebo;
+        }
+
+        input {
+            width: 26rem;
+            height: 4rem;
+        }
+
+        input[type=submit] {
+            width: 166px;
+            height: 50px;
+            border: 0;
+            margin-top: 50px;
+            background-color: #D31C75;
+            color: #fff;
+            font: normal normal 700 22px/30px Heebo;
+            cursor: pointer;
+        }
+
+
+        @media (max-width: 575.98px) {
+            input {
+                width: 70vw;
+            }
+
+            h1 {
+                width: 300px;
+            }
+
+            p {
+                width: 300px;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .container {
+                max-width: 991.98px;
+            }
+
+            .box {
+                width: 90vw;
+                height: 40.1875em;
+            }
+        }
+
+        @media (max-width: 991.98px) {
+            .container {
+                max-width: 991.98px;
+            }
+
+            .box {
+                flex: none;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./images/Path 15.png" alt="">
+        <div class="box">
+            <h1>תן לנו להוביל אותך קדימה</h1>
+            <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.</p>
+
+            <form action="">
+                <label for="fullname">שם מלא</label>
+                <input type="text" id="fullname" name="fullname" required><br>
+                <label for="email">דוא״ל</label>
+                <input type="text" id="email" name="email address" required><br>
+                <input type="submit" value="שׁליחה">
+            </form>
+        </div>
+        <div class="btn">
+        </div>
+    </div>
+</body>
+
+</html>
