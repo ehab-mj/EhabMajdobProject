@@ -7,7 +7,7 @@
 #container-fluid h2 {
     margin: auto;
     font-size: 35px;
-    width: 132px;
+    width: 232px;
     height: 70px;
     font: normal normal 900 35px/52px Heebo;
     color: #3A3A3A
@@ -42,11 +42,25 @@
     height: 100px;
 }
 
+@media (max-width: 1800px) {
+    #container-fluid button {
+        margin-top: 28vh;
+    }
+
+    #container-fluid h2 {
+        margin: auto;
+        font-size: 35px;
+        width: 232px;
+        height: 52px;
+        color: #3A3A3A
+    }
+}
+
 @media (max-width: 768px) {
     #container-fluid h2 {
         margin: auto;
         font-size: 35px;
-        width: 132px;
+        width: 232px;
         height: 52px;
         color: #3A3A3A
     }
@@ -89,7 +103,7 @@
     #container-fluid h2 {
         margin: auto;
         font-size: 35px;
-        width: 132px;
+        width: 232px;
         height: 52px;
         color: #3A3A3A
     }
