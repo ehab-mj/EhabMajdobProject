@@ -1,47 +1,91 @@
-.image-container {
-    position: relative;
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap');
+
+.container {
+    max-width: 90vw;
+    margin: 0 auto;
 }
 
-.image-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #3A3A3A;
+.image-container {
+    height: 32.8125em;
+    background-image: url(./img/bg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-text h2 {
-    font-size: 118px;
-    font-weight: bold;
+    /* font: normal normal 500 80px/70px Heebo; */
+    font: normal normal 900 50px/70px Heebo;
+    text-align: center;
 }
 
 .image-text p {
-    font-size: 30px;
-    font-weight: 600;
+    font: normal normal 500 20px/30px Heebo;
+    text-align: center;
+}
+
+.image-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+@media(max-width: 780px) {
+    .image-text h2 {
+        font: normal normal 900 40px/50px Heebo;
+    }
+
+    .image-text>p {
+        font: normal bold 500 16px/20px Heebo;
+    }
+}
+
+@media(max-width: 520px) {
+    .image-text>h2 {
+        font: normal bold 900 20px/30px Heebo;
+    }
+
+    .image-text>p {
+        font: normal normal 500 18px/30px Heebo;
+        margin-top: 30px;
+    }
+
+    .image-text {
+        width: 80%;
+    }
+}
+
+@media (max-size: 600px) {
+    .image-container {
+        width: 100%;
+    }
 }
 
 /*  ICONS */
 .sectionimages {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-content: center;
-}
-
-
-.divimages {
-    display: flex;
     justify-content: space-evenly;
-    align-content: center;
-    width: 100vw;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 0px 3px 6px #00000029;
 }
 
-.text {
-    text-align: center;
+.sectionimages img {
+    width: 100px;
 }
 
-@media (max-width: 1300px) {
+@media (max-size: 620px) {
+    .sectionimages {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+/* @media (max-width: 1300px) {
     .image-container {
         height: 50vh;
         margin-bottom: -150px;
@@ -145,4 +189,4 @@
         top: 15%;
         font-weight: 600;
     }
-}
+} */

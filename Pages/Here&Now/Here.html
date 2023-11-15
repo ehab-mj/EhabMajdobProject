@@ -29,10 +29,10 @@
         }
 
         h1 {
-            width: 755px;
+            /* width: 755px;
             height: 204px;
             margin-left: 172px;
-            margin-right: 172px;
+            margin-right: 172px; */
             /* UI Properties */
 
             text-align: center;
@@ -80,38 +80,50 @@
         }
 */
         .container {
+            max-width: 1920px;
+            height: 742px;
+
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; */
+        }
+
+        form {
+            display: flex;
+            direction: rtl;
+            justify-content: space-evenly;
+            align-items: end;
+        }
+
+        .form-row {
+            width: 100vw;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
+            padding: 83px;
         }
 
-        .container form {
-            height: 73px;
-        }
-
-        .container form .form-row {
-            direction: rtl;
+        .formlabel {
             display: flex;
-            margin-top: 3.7vh;
-        }
-
-        .container form .form-row .formlabel {
-            display: flex;
-            justify-content: flex-end;
             flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
             margin-right: 2vw;
         }
 
-        .container form .form-row .formlabel input {
+        input {
             background: rgba(246, 246, 246, 0.1411764706) 0% 0% no-repeat padding-box;
             width: 21.77vw;
             height: 4.62vh;
+            font-size: 15pt;
+            color: #fff;
             border: 2px solid #FFFFFF;
             opacity: 1;
+            ;
         }
 
-        .container form .form-row .formlabel input:hover {
+        input:hover {
             background: rgba(246, 246, 246, 0.1411764706) 0% 0% no-repeat padding-box;
             width: 21.77vw;
             height: 4.62vh;
@@ -120,7 +132,7 @@
             box-shadow: 0 4px #281EFF;
         }
 
-        .container form .form-row .formlabel label {
+        label {
             text-align: right;
             font: normal normal normal 16px/20px Varela Round;
             letter-spacing: 0px;
@@ -128,7 +140,20 @@
             opacity: 1;
         }
 
-        .container form .form-row .formlabel .btn {
+        .btn {
+            display: block;
+            width: 11vw;
+            height: 4.62vh;
+            background-color: #FFFFFF;
+            opacity: 1;
+            font: normal normal normal 20px/25px Varela Round;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1;
+            cursor: pointer;
+        }
+
+        .btn:hover {
             display: block;
             width: 11vw;
             height: 4.62vh;
@@ -141,25 +166,46 @@
             cursor: pointer;
         }
 
-        .container form .form-row .formlabel .btn:hover {
-            display: block;
-            width: 11vw;
-            height: 4.62vh;
-            background-color: #FFFFFF;
-            opacity: 1;
-            font: normal normal normal 16px/2.5 Varela Round;
-            letter-spacing: 0px;
-            color: #000000;
-            opacity: 1;
-            cursor: pointer;
+        @media (max-width: 1100px) {
+            .form-row {
+                flex-direction: column;
+                width: 100vw;
+            }
+
+            form {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            input {
+                max-width: 550px;
+                width: 90vw;
+            }
+
+            input[type=submit] {
+                max-width: 550px;
+                width: 90vw;
+                margin-top: 20px;
+            }
+
+            h1 {
+                font: normal normal normal 85px/231px Satisfy;
+            }
+
+            p {
+                font-size: 16px;
+                color: #F9F9F9;
+                margin: 23px;
+            }
         }
 
-        @media screen and (max-width:500px) {
+        /* @media screen and (max-width:500px) {
             h1 {
                 width: 100vw;
-                height: 120vw;
-                /* UI Properties */
-                font: normal normal normal 60px/131px Satisfy;
+                height: 120vw; */
+        /* UI Properties */
+        /* font: normal normal normal 60px/131px Satisfy;
             }
 
             p {
@@ -231,7 +277,7 @@
                 opacity: 1;
                 cursor: pointer;
             }
-        }
+        } */
     </style>
 </head>
 

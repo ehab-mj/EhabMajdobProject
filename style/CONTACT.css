@@ -1,537 +1,195 @@
-footer {
+/* footer {
     background-color: #3A3A3A;
     bottom: 0;
     width: 100%;
     direction: rtl;
+} */
+
+.Contact-C {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #3A3A3A;
 }
 
-footer .container {
+.Contact-C .contactImg {
+    max-width: 770px;
+    max-height: 671px;
+    width: 40vw
+}
+
+.MainForm {
+    max-width: 600px;
     display: flex;
     flex-direction: column;
-    background-color: #3A3A3A;
-    margin-right: 305px;
+    width: 40vw;
+    margin: 5vw;
+    text-align: center
 }
 
-footer .container #contact {
+.MainForm h1 {
+    color: #ffffff;
+    margin: 10px;
+    text-align: right;
+}
+
+.MainForm p {
+    color: #ffffff;
+    margin: 10px 0 10px 0;
+    text-align: right;
+}
+
+.form-type {
+    width: 40vw;
+    max-width: 600px
+}
+
+.MainForm label {
+    font: normal normal bold 16px/20px Heebo;
+    width: 40vw;
+    max-width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.MainForm input {
     width: 100%;
-    height: 88vh;
-    background: #3A3A3A 0% 0% no-repeat padding-box;
-    color: wheat;
-    display: flex;
+    min-width: 100px;
+    max-width: 600px;
+    border: none;
+    color: #000;
+    font-size: 15pt;
+    font: normal normal bold 16px/20px Heebo;
+    border-bottom: 3px solid #1AE0EC;
+    height: 30px;
+    border-bottom: 5px solid #1AE0EC;
 }
 
-footer .container #contact .imgbox {
-    width: 70vw;
-    position: absolute;
-    margin-left: 1381px;
+.MainForm input[type=submit] {
+    cursor: pointer;
 }
 
-footer .container #contact .smbox {
-    display: none;
-    width: 200px;
+.MainForm input:hover {
+    border-bottom: 6px solid #9400D3;
+}
+
+.MainForm .Message-type textarea {
+    resize: none;
+    width: 100%;
     height: 100px;
-    margin-right: -50px;
+    border: none;
+    border-bottom: 5px solid #1AE0EC;
 }
 
-footer .container #contact form {
-    width: 30vw;
-    margin-top: 161px;
-    background: #3A3A3A;
+.MainForm .Message-type textarea:hover {
+    border-bottom: 6px solid #9400D3;
 }
 
-footer .container #contact form .form-type {
-    margin-bottom: 17px;
-    text-align: right;
-}
-
-footer .container #contact form .form-type input {
-    width: 550px;
+.MainForm .send {
+    width: 10vw;
+    max-width: 166px;
     height: 50px;
-    text-align: right;
-    font: normal normal bold 18px/24px Heebo;
-    box-shadow: 0 7px #1AE0EC;
-}
-
-footer .container #contact form .form-type input:hover {
-    width: 550px;
-    height: 50px;
-    text-align: right;
-    font: normal normal bold 18px/24px Heebo;
-    box-shadow: 0 16px #f4143c;
-    /* f4143c / 251473 */
-}
-
-footer .container #contact form .form-type input[id=massage] {
-    width: 550px;
-    height: 100px;
-    background: #ffffff
-}
-
-footer .container #contact form .form-type label {
-    text-align: right;
-    font: normal normal bold 16px/24px Heebo;
-    letter-spacing: 0px;
-    color: #ffffff;
-    opacity: 1;
-}
-
-/*footer .container*/
-#contact form h1 {
-    text-align: right;
-    font: normal normal 900 36px/53px Heebo;
-    letter-spacing: 0px;
-    color: #ffffff;
-    opacity: 1;
-}
-
-#contact form p {
-    text-align: right;
-    font: normal normal normal 20px/29px Heebo;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-    margin-bottom: 47px;
-}
-
-footer .container #contact form .btn {
-    display: block;
-    width: 10.375rem;
-    height: 3.125rem;
-    margin-top: 35px;
-    background: #1AE0EC;
-    border-radius: 25px;
+    margin: 20px;
+    background-color: #1AE0EC;
+    color: #000;
     font: normal normal bold 22px/30px Heebo;
-    color: rgb(44, 44, 44);
-    letter-spacing: 0.3px;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    line-height: 1.9;
-    opacity: 1;
-}
-
-footer .container #contact form .btn:hover {
-    display: block;
-    width: 10.375rem;
-    height: 3.125rem;
-    background: #251473;
+    font-size: 22px;
     border-radius: 25px;
-    font: normal normal bold 22px/30px Heebo;
-    color: #f4143c;
-    letter-spacing: 0.3px;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    line-height: 1.9;
-    opacity: 1;
 }
 
-/*Footer Icons MEDIA*/
-
-
-footer .container .media {
-    height: 200px;
-    width: 100vw;
-    margin-right: -310px;
-    background: #0cf7ff;
-    opacity: 1;
-}
-
-footer .container .media .icons-box {
-
-    width: 60vw;
-    height: 200px;
-    display: inline-grid;
-    grid-template-columns: repeat(6, 1fr);
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    background-color: #0cf7ff;
-    margin-right: 500px;
-}
-
-footer .container .media .icons-box .box-item img {
-    margin-bottom: 2vh;
-    margin-right: 4.5vw;
-}
-
-footer .container .media .icons-box .box-item h5 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-right: 0.5vw;
-    font: normal normal normal 14px/16px Heebo;
-    letter-spacing: 0px;
-    color: #050505;
-    opacity: 1;
-}
-
-.copyRight {
-    color: #1AE0EC;
-    font: normal normal 300 20px/29px Heebo;
-    width: 100vw;
-    line-height: 2.2;
-    background-color: #000000;
-}
-
-.right {
-    float: right;
-    width: 200px;
-}
-
-.left {
-    width: 200px;
-}
-
-@media (max-width: 1450px) {
-    footer .container #contact {
-        width: 100%;
-        height: 120vh;
-        background: #3A3A3A 0% 0% no-repeat padding-box;
-        color: wheat;
-        display: flex;
-    }
-}
-
-@media (max-width: 1000px) {
-    footer .container #contact {
-        width: 100%;
-        height: 140vh;
-        background: #3A3A3A 0% 0% no-repeat padding-box;
-        color: wheat;
-        display: flex;
-    }
-
-    footer .container #contact form {
-        margin-right: -45vw;
-    }
-}
-
-@media (max-width: 968px) {
-    footer .container #contact form {
-        margin-right: -45vw;
-    }
-}
-
-@media (max-width: 768px) {
-    footer .container #contact form {
-        width: 30vw;
-        margin-top: 231px;
-        background: #3A3A3A;
-        margin-right: -45vw;
-    }
-
-    footer .container #contact {
-        width: 100%;
-        height: 100vh;
-        background: #3A3A3A 0% 0% no-repeat padding-box;
-        color: wheat;
-        display: flex;
-    }
-
-    #contact form h1 {
-        width: 90vw;
-        margin-right: 5.5vw;
-        text-align: right;
-        font: normal normal 900 36px/53px Heebo;
-        letter-spacing: 0px;
-        color: #ffffff;
-        opacity: 1;
-    }
-
-    #contact form p {
-        margin-right: 5.5vw;
-        text-align: right;
-        font: normal normal normal 16px/29px Heebo;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-        opacity: 1;
-        margin-bottom: 47px;
-        width: 90vw;
-    }
-
-    footer .container #contact form .form-type input {
-        width: 350px;
-        height: 50px;
-        margin-right: 5.5vw;
-        text-align: right;
-        font: normal normal bold 18px/24px Heebo;
-    }
-
-    footer .container #contact form .form-type input:hover {
-        width: 350px;
-        height: 50px;
-        text-align: right;
-        font: normal normal bold 18px/24px Heebo;
-        box-shadow: 0 16px #f4143c;
-        /* f4143c / 251473 */
-    }
-
-    footer .container #contact form .form-type input[id=massage] {
-        width: 350px;
-        height: 100px;
-        background: #ffffff
-    }
-
-    footer .container #contact form .form-type label {
-        text-align: right;
-        margin-right: 5.5vw;
-        font: normal normal bold 16px/24px Heebo;
-        letter-spacing: 0px;
-        color: #ffffff;
-        opacity: 1;
-    }
-
-    footer .container #contact form .btn {
-        display: block;
-        margin-top: 45px;
-        margin-right: 5.5vw;
-        width: 10.375rem;
-        height: 3.125rem;
-        background: #1AE0EC;
-        border-radius: 25px;
-        font: normal normal bold 22px/30px Heebo;
-        color: rgb(44, 44, 44);
-        letter-spacing: 0.3px;
-        text-decoration: none;
-        justify-content: center;
-        align-items: center;
-        line-height: 1.9;
-        opacity: 1;
-    }
-
-    footer .container #contact .smbox {
-        display: block;
-        width: 200px;
-        height: 100px;
-        margin-right: 150px;
-    }
-}
-
-@media screen and (max-width:576px) {
-    footer .container #contact form {
-        width: 30vw;
-        margin-top: 231px;
-        background: #3A3A3A;
-        margin-right: -65vw;
-    }
-
-    footer .container #contact {
-        width: 100%;
-        height: 100vh;
-        background: #3A3A3A 0% 0% no-repeat padding-box;
-        color: wheat;
-        display: flex;
-    }
-
-    #contact form h1 {
-        width: 90vw;
-        margin-right: 5.5vw;
-        text-align: right;
-        font: normal normal 900 36px/53px Heebo;
-        letter-spacing: 0px;
-        color: #ffffff;
-        opacity: 1;
-    }
-
-    #contact form p {
-        margin-right: 5.5vw;
-        text-align: right;
-        font: normal normal normal 16px/29px Heebo;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-        opacity: 1;
-        margin-bottom: 47px;
-        width: 90vw;
-    }
-
-    footer .container #contact form .form-type input {
-        width: 350px;
-        height: 50px;
-        margin-right: 5.5vw;
-        text-align: right;
-        font: normal normal bold 18px/24px Heebo;
-    }
-
-    footer .container #contact form .form-type input:hover {
-        width: 350px;
-        height: 50px;
-        text-align: right;
-        font: normal normal bold 18px/24px Heebo;
-        box-shadow: 0 16px #f4143c;
-        /* f4143c / 251473 */
-    }
-
-    footer .container #contact form .form-type input[id=massage] {
-        width: 350px;
-        height: 100px;
-        background: #ffffff
-    }
-
-    footer .container #contact form .form-type label {
-        text-align: right;
-        margin-right: 5.5vw;
-        font: normal normal bold 16px/24px Heebo;
-        letter-spacing: 0px;
-        color: #ffffff;
-        opacity: 1;
-    }
-
-    footer .container #contact form .btn {
-        display: block;
-        margin-right: 5.5vw;
-        width: 10.375rem;
-        height: 3.125rem;
-        background: #1AE0EC;
-        border-radius: 25px;
-        font: normal normal bold 22px/30px Heebo;
-        color: rgb(44, 44, 44);
-        letter-spacing: 0.3px;
-        text-decoration: none;
-        justify-content: center;
-        align-items: center;
-        line-height: 1.9;
-        opacity: 1;
-    }
-
-    footer .container #contact .smbox {
-        display: block;
-        width: 200px;
-        height: 100px;
-        margin-right: -20px;
-    }
-
-    footer .container .media .icons-box {
-
-        width: -20vw;
-        height: 200px;
-        display: inline-grid;
-        grid-template-columns: repeat(6, 1fr);
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: row;
-        background-color: #2f3131;
-        margin-right: 500px;
-    }
-
-    footer .container .media .icons-box .box-item img {
-        margin-bottom: 2vh;
-        margin-right: 85.5vw;
-    }
-
-    footer .container .media .icons-box .box-item h5 {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin-right: 0.5vw;
-        font: normal normal normal 14px/16px Heebo;
-        letter-spacing: 0px;
-        color: #050505;
-        opacity: 1;
-    }
+.MainForm .send:hover {
+    color: #ffffff;
+    background-color: #9400D3;
 }
 
 .mediaicons {
-    background-color: aqua;
-    width: 100vw;
-    height: 15vh;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    height: 200px;
     align-items: center;
-    list-style-type: none;
-    font: normal normal bold 16px/18px Heebo;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #1AE0EC;
 }
 
-.mediabox {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: center;
-    width: 75vw;
-    height: 10vh;
-    list-style-type: none;
+.mediaicons img {
+    width: 35px;
+    height: 40px;
+    color: #000;
 }
 
-.M-ICON {
-    width: 200px;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.mediaicons div {
     text-align: center;
-    line-height: 3.5;
 }
 
-@media (max-width: 1500px) {
-    .mediaicons {
-        margin-top: 50px;
-        top: 200px;
-        width: 100vw;
-        height: 60vh;
+.mediaicons p {
+    font: normal normal bold 14px/21px Heebo;
+}
+
+.copyRight {
+    display: grid;
+    margin: 0px;
+    color: #1ae0ec;
+    background-color: #36383f;
+    grid-template-columns: 25% 50% 25%;
+}
+
+@media screen and (max-width: 600px) {
+    .Contact-C {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
     }
 
-    .mediabox {
-        width: 90vw;
-        height: 80vh;
-        display: grid;
+    .MainForm h1 {
+        text-align: center;
+    }
+
+    .MainForm p {
+        text-align: center;
+    }
+
+    .Contact-C img {
+        grid-column: 1/2;
+        width: 100%;
+    }
+
+    .mediaicons img {
+        width: 25px;
+        height: 30px
+    }
+
+    .Contact-C .MainForm {
+        grid-column: 1/2;
+        grid-row: 2;
+        max-width: 300px;
+        width: 80vw;
+    }
+
+    .MainForm label {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        color: #ffffff;
+    }
+
+    .form-type {
+        width: 100%;
+    }
+
+    .Contact-C .mediaicons {
+        grid-row: 3;
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .mediaicons {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
+        justify-items: center;
 
-    .M-ICON {
-        width: 350px;
-        height: 80px;
-        line-height: 3.5;
-    }
-}
-
-@media (max-width: 920px) {
-    .mediaicons {
-        margin-top: 0;
-        top: 200px;
-        width: 100vw;
-        height: 100vh;
-    }
-
-    .mediabox {
-        width: 85vw;
-        height: 100vh;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-
-    .M-ICON {
-        width: 200px;
-        height: 200px;
-        line-height: 3.5;
-    }
-}
-
-@media (max-width: 520px) {
-    .mediaicons {
-        height: 60vh;
-        margin-top: 0;
-    }
-
-    .mediabox {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 1000px) {
-    .mediaicons {
-        margin-top: 0;
-    }
-}
-
-@media (max-width: 1550px) {
-    .mediaicons {
-        margin-top: 0;
     }
 }

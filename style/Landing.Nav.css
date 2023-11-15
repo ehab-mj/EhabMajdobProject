@@ -1,4 +1,9 @@
 /*  NAV  */
+.container {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +37,6 @@ nav ul li a:hover {
     font-family: Heebo;
     display: block;
     width: 100px;
-    color: #1AE0EC;
     text-decoration: none;
     font-size: 14pt;
     border-radius: 10px;
@@ -45,4 +49,10 @@ nav ul li ul li {
 
 nav ul li ul {
     display: none;
+}
+
+@media(max-width: 700px) {
+    .container {
+        width: 95vw
+    }
 }

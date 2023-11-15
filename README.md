@@ -1,3 +1,0 @@
-# EhabMajdobProject
-
-MY PORTFOLIO

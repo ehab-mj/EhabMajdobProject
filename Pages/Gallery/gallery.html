@@ -7,11 +7,234 @@
     <link rel="stylesheet" href="./style/gallery.css">
     <title>Gallery</title>
     <style>
-        body {
-            background-color: #E5EEFF;
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
         }
 
         .container {
+            margin: 0 auto;
+            display: grid;
+            width: 1244px;
+            justify-content: space-between;
+            gap: 20px;
+            grid-template-columns: repeat(4 1fr);
+            grid-template-rows: repeat(6 1fr);
+        }
+
+        .container img {
+            width: 296px;
+            height: 271px;
+        }
+
+        h1 {
+            letter-spacing: 0px;
+            opacity: 1;
+
+            font: normal normal bold 61px/80px Assistant;
+            color: #0EE1DA;
+            margin-bottom: 19px;
+        }
+
+        p {
+            letter-spacing: 0px;
+            color: #F9F9F9;
+            opacity: 1;
+
+            font: normal normal normal 20px/26px Assistant;
+            width: 475px;
+            text-align: center;
+        }
+
+        .content {
+            background-color: #020253;
+            grid-column: 3/5;
+            grid-row: 1/3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background-color: #8E097C;
+            grid-column: 1/3;
+            grid-row: 4/7;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            font: normal normal bold 35px/46px Assistant;
+            color: #ffffff;
+            margin-bottom: 23px;
+        }
+
+        .card form {
+            /* width: 500px;
+            height: 800px;
+            margin-top: 70px;
+            margin-left: 30px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+        }
+
+        .card form label {
+            margin-top: 20px;
+        }
+
+        .card form label,
+        textarea {
+            letter-spacing: 0px;
+            color: #0EE1DA;
+            opacity: 1;
+            font: normal normal bold 20px/24px Heebo;
+            /* color: #ffffff; */
+        }
+
+        .card form input {
+            /* width: 500px;
+            height: 172px; */
+            /* background: #ffffff; */
+            box-shadow: 0px 4px 0 #0EE1DA;
+
+            width: 500px;
+            height: 60px;
+            border: none;
+            border-bottom: 5px solid #ffffff;
+        }
+
+        textarea {
+            resize: none;
+            width: 500px;
+            height: 172px;
+            border-bottom: 5px solid #ffffff;
+        }
+
+        .btn {
+            width: 505px;
+            height: 59px;
+            background: #0EE1DA;
+            line-height: 2.2;
+            opacity: 1;
+            cursor: pointer;
+
+
+            width: 100%;
+            height: 55px;
+            font: normal normal bold 24px/35px Heebo;
+            color: #020253;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 1260px) {
+            .container {
+                width: 928px;
+                grid-template-columns: repeat(3 1fr);
+                grid-template-rows: repeat(8 1fr);
+            }
+
+            .content {
+                grid-column: 2/4;
+                grid-row: 1/3;
+            }
+
+            .card {
+                grid-column: 1/3;
+                grid-row: 5/8;
+            }
+        }
+
+        @media screen and (max-width: 1066px) {
+            .container {
+                width: 632px;
+                grid-template-columns: repeat(2 1fr);
+                grid-template-rows: repeat(13 1fr);
+            }
+
+            .content {
+                height: 340px;
+                grid-column: 1/3;
+                grid-row: 1/3;
+            }
+
+            .card {
+                height: 518px;
+                grid-column: 1/3;
+                grid-row: 7/10;
+            }
+
+            .card form input {
+                height: 30px;
+            }
+
+            textarea {
+                height: 95px;
+            }
+
+            .card form label,
+            textarea {
+                font: normal normal bold 14px/16px Heebo;
+            }
+
+            .btn {
+                font: normal normal bold 12px/18px Heebo;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            .container {
+                width: 80vw;
+            }
+
+            .container img {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1/1.1;
+            }
+
+            .content {
+                width: 100%;
+                height: 340px;
+                grid-column: 1/3;
+                grid-row: 1/3;
+            }
+
+            .card {
+                width: 100%;
+                grid-column: 1/3;
+                grid-row: 7/10;
+            }
+
+            h1 {
+                font: normal normal bold 36px/47px Assistant;
+            }
+
+            p {
+                font: normal normal bold 15px/19px Assistant;
+                width: 80%;
+            }
+
+            .card form input {
+                width: 100%;
+            }
+
+            textarea {
+                resize: none;
+                width: 100%;
+            }
+
+            h2 {
+                font: normal normal bold 25px/33px Assistant;
+            }
+        }
+
+        /* .container {
             width: 1200px;
             height: 800px;
             margin: 100px auto;
@@ -19,156 +242,56 @@
             grid-template-columns: repeat(4, 296px);
             grid-template-rows: repeat(6, 270px);
             gap: 20px;
-        }
-
+        } */
+        /* 
         .item {
             background-color: darkorchid;
             padding: 20px;
-        }
+        } */
 
 
-        .box1 {
+        /* .box1 {
             background-image: url(./images/Rectangle\ 515.png);
-        }
+        } */
 
-        .box2 {
+        /* .box2 {
             background-image: url(./images/Rectangle\ 514.png);
-        }
-
+        } */
+        /* 
         .box3 {
             background-color: #020253;
             grid-column: 3/5;
             grid-row: 1/3;
-        }
+        } */
 
-        .box3 h1 {
-            color: #0EE1DA;
-            text-align: center;
-            font: normal normal bold 61px/80px Assistant;
-            letter-spacing: 0px;
-            color: #0EE1DA;
-            opacity: 1;
-            margin-top: 175px;
-        }
-
-        .box3 p {
-            width: 475px;
-            margin-left: 45px;
-            margin-top: -19px;
-            text-align: center;
-            font: normal normal normal 20px/26px Assistant;
-            letter-spacing: 0px;
-            color: #F9F9F9;
-            opacity: 1;
-        }
-
-        .box4 {
+        /* .box4 {
             background-image: url(./images/Rectangle\ 516.png);
             background-repeat: no-repeat;
             object-fit: cover;
-        }
+        } */
 
-        .box5 {
+        /* .box5 {
             background-image: url(./images/Rectangle\ 506.png);
-        }
-
+        } */
+        /* 
         .box6 {
             background-image: url(./images/1111.png);
-        }
+        } */
 
-        .box7 {
+        /* .box7 {
             background-image: url(./images/2222.png);
-        }
+        } */
 
-        .box8 {
+        /* .box8 {
             background-image: url(./images/33333.png);
-        }
+        } */
 
-        .box9 {
+        /* .box9 {
             background-image: url(./images/4444.png);
-        }
+        } */
 
-        .box10 {
-            background-color: #8E097C;
-            grid-column: 1/3;
-            grid-row: 4/7;
-        }
 
-        .box10 h1 {
-            color: #F9F9F9;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            font: normal normal bold 35px/46px Assistant;
-            letter-spacing: 0px;
-            opacity: 1;
-            margin-top: 63px;
-        }
-
-        .box10 p {
-            color: #F9F9F9;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            font: normal normal normal 20px/26px Assistant;
-            letter-spacing: 0px;
-            opacity: 1;
-            margin-top: 23px;
-        }
-
-        .box10 form {
-            width: 500px;
-            height: 800px;
-            margin-top: 70px;
-            margin-left: 30px;
-        }
-
-        .box10 form .form-type {
-            margin-bottom: 17px;
-            text-align: right;
-        }
-
-        .box10 form .form-type input {
-            width: 500px;
-            height: 60px;
-            text-align: right;
-            font: normal normal bold 18px/24px Heebo;
-            box-shadow: 0px 4px 0 #0EE1DA;
-        }
-
-        .box10 form .form-type input[id=massage] {
-            width: 500px;
-            height: 172px;
-            background: #ffffff;
-            box-shadow: 0px 4px 0 #0EE1DA;
-        }
-
-        .box10 form .form-type label {
-            text-align: right;
-            font: normal normal bold 16px/24px Heebo;
-            letter-spacing: 0px;
-            color: #0EE1DA;
-            opacity: 1;
-        }
-
-        .box10 form .btn {
-            display: block;
-            width: 505px;
-            height: 59px;
-            background: #0EE1DA;
-            text-align: center;
-            font: normal normal bold 24px/33px Heebo;
-            color: #011560;
-            letter-spacing: 0.3px;
-            text-decoration: none;
-            justify-content: center;
-            line-height: 2.2;
-            opacity: 1;
-            margin-left: 2px;
-            cursor: pointer;
-        }
-
-        .box11 {
+        /* .box11 {
             background-image: url(./images/5555.png);
         }
 
@@ -190,57 +313,55 @@
 
         .box16 {
             background-image: url(./images/999.png);
-        }
+        } */
 
-        @media screen and (max-width: 900px) {
+        /* @media screen and (max-width: 900px) {
             .container {
                 display: flex;
                 flex-direction: column;
             }
 
-        }
+        } */
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="item box1"></div>
-        <div class="item box2"></div>
-        <div class="item box3">
+        <img src="./images/Rectangle 515@2x.png" alt="">
+        <img src="./images/514.png" alt="">
+        <div class="content">
             <h1>לגלות את העולם</h1>
             <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.</p>
         </div>
-        <div class="item box4"></div>
-        <div class="item box5"></div>
-        <div class="item box6"></div>
-        <div class="item box7"></div>
-        <div class="item box8"></div>
-        <div class="item box9"></div>
-        <div class="item box10">
-            <h1>ספרו לנו על החוויה שלכם</h1>
+        <img src="./images/Rectangle 516.png" alt="">
+        <img src="./images/Rectangle 506.png" alt="">
+        <img src="./images/1111.png" alt="">
+        <img src="./images/2222.png" alt="">
+        <img src="./images/33333.png" alt="">
+        <img src="./images/4444.png" alt="">
+        <div class="card">
+            <h2>ספרו לנו על החוויה שלכם</h2>
             <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.</p>
-            <form action="">
-                <div class="form-type">
-                    <label for="text">שם מלא</label><br>
-                    <input type="text" id="text" name="fname"><br>
-                </div>
-                <div class="form-type">
-                    <label for="email">דוא״ל</label><br>
-                    <input type="email" id="email" name="email"><br>
-                </div>
-                <div class="form-type">
-                    <label for="massage">תוכן ההודעה</label><br>
-                    <input type="massage" id="massage" name="fname"><br>
-                </div>
-                <a class="btn">שׁליחה</a>
+            <form>
+
+                <label for="text">שם מלא</label><br>
+                <input type="text" id="text" name="fname"><br>
+
+
+                <label for="email">דוא״ל</label><br>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="massage">תוכן ההודעה</label><br>
+                <textarea cols="30" rows="10"></textarea>
+                <input type="button" value="שליחה" class="btn">
             </form>
         </div>
-        <div class="item box11"></div>
-        <div class="item box12"></div>
-        <div class="item box13"></div>
-        <div class="item box14"></div>
-        <div class="item box15"></div>
-        <div class="item box16"></div>
+        <img src="./images/555.png" alt="">
+        <img src="./images/666.png" alt="">
+        <img src="./images/777.png" alt="">
+        <img src="./images/888.png" alt="">
+        <img src="./images/Rectangle 513@2x.png" alt="">
+        <img src="./images/999.png" alt="">
     </div>
 </body>
 
