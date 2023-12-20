@@ -1,3 +1,11 @@
+:root {
+    --dark-bg-color: #1f242d;
+    --Light-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0df9a4;
+    /* #D242FF */
+}
+
 .container {
     max-width: 90vw;
     margin: 0 auto;
@@ -11,21 +19,24 @@
 
 .image-container {
     height: 32.8125em;
-    background-image: url(./img/bg.jpg);
+    /* background-image: url(./img/bg.jpg); */
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #323946;
 }
 
 .image-text h2 {
     /* font: normal normal 500 80px/70px Heebo; */
     font: normal normal 900 40px/60px Heebo;
     text-align: center;
+    color: #0df9a4;
 }
 
 .image-text p {
     font: normal normal 500 18px/20px Heebo;
     text-align: center;
+    color: #fff;
 }
 
 .image-text {
@@ -70,7 +81,19 @@
 
 
 .Btn {
-    width: 220px;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--text-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    text-decoration: dashed;
+
+    /* width: 220px;
     height: 40px;
     background-color: #1AE0EC;
     color: #3A3A3A;
@@ -79,12 +102,11 @@
     text-align: center;
     margin-top: 10px;
     border: 0;
-    font-size: 1.4em;
+    font-size: 1.4em; */
 }
 
 .Btn:hover {
-    color: #fff;
-    background-color: purple;
+    box-shadow: none;
 }
 
 /*  ICONS */

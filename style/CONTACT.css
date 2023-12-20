@@ -1,10 +1,122 @@
+/* NEW */
+
+:root {
+    --dark-bg-color: #1f242d;
+    --Light-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0df9a4;
+}
+
+.contact h2 {
+    margin-bottom: 3rem;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input {
+    width: 50%;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--Light-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form textarea {
+    resize: none;
+    margin-bottom: 2rem;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--Light-bg-color);
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-iconTop a:hover {
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--Light-bg-color);
+}
+
+@media (max-width: 991px) {
+    .contact {
+        min-height: auto;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 450px) {
+    .contact form .input-box input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 365px) {
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
+
 /* footer {
     background-color: #3A3A3A;
     bottom: 0;
     width: 100%;
     direction: rtl;
 } */
-
+/* 
 .Contact-C {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -192,4 +304,4 @@
         justify-items: center;
 
     }
-}
+} */

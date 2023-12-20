@@ -1,6 +1,61 @@
-#container-fluid {
-    /* background-color: #fff;
-    width: 100vw;*/
+/* NEW */
+:root {
+    --dark-bg-color: #1f242d;
+    --Light-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0df9a4;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--Light-bg-color);
+}
+
+.about-img img {
+    width: 35vw;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 365px) {
+    .about-img img {
+        width: 90vw;
+    }
+}
+
+/* #container-fluid {
+
     height: 600px;
 
     display: flex;
@@ -11,31 +66,31 @@
 
 #container-fluid .profile {
     margin: 30px
-}
+} */
 
-#container-fluid h2 {
-    /* margin: auto; */
-    /* font-size: 35px; */
-    /* width: 232px;
+/* #container-fluid h2 { */
+/* margin: auto; */
+/* font-size: 35px; */
+/* width: 232px;
     height: 70px; */
-    font: normal normal 900 35px/52px Heebo;
+/* font: normal normal 900 35px/52px Heebo;
     color: #ffffff;
     margin-top: 15px;
 
-}
+} */
 
-#container-fluid p {
+/* #container-fluid p {
     font: normal normal 500 20px/29px Heebo;
-    direction: rtl;
-    /* width: 650px;
+    direction: rtl; */
+/* width: 650px;
     height: 232px;
     text-align: center; */
-    color: #fff;
+/* color: #fff;
     margin-top: 15px;
     text-align: center;
-}
+} */
 
-.Btn {
+/* .Btn {
     width: 220px;
     height: 40px;
     background-color: #1AE0EC;
@@ -51,7 +106,7 @@
 .Btn:hover {
     color: #fff;
     background-color: purple;
-}
+} */
 
 /* .text-center {
     font-size: 16pt;
