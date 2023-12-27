@@ -15,6 +15,12 @@
     margin-bottom: 4rem;
 }
 
+.JSportfolio h3 {
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
 .JSportfolio-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -70,8 +76,16 @@
     margin: .1rem 0 1rem;
 }
 
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: .5rem;
+}
+
 .JSportfolio-layer a {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 5rem;
